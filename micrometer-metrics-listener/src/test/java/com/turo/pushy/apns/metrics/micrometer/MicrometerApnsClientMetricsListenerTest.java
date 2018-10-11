@@ -51,6 +51,9 @@ public class MicrometerApnsClientMetricsListenerTest {
         assertEquals(1, (int) writeFailures.count());
     }
 
+    /**
+     * ljj add
+     */
     @Test
     public void testHandleNotificationSent() {
         final Counter sentNotifications = this.meterRegistry.get(MicrometerApnsClientMetricsListener.SENT_NOTIFICATIONS_COUNTER_NAME).counter();
